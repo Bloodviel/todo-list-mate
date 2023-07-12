@@ -7,7 +7,7 @@ from todo.models import Tag, Task
 
 class TaskListView(generic.ListView):
     model = Task
-    queryset = Task.objects.all()
+    queryset = Task.objects.prefetch_related("tags")
     template_name = "todo/index.html"
 
 
