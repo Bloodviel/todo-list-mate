@@ -1,8 +1,8 @@
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.views import generic
 
-from todo.models import Task, Tag
+from todo.models import Tag, Task
 
 
 class TaskListView(generic.ListView):

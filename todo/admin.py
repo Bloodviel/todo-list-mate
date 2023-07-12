@@ -16,5 +16,10 @@ class TagAdmin(admin.ModelAdmin):
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ["content", "mark_task", "date_time", "deadline"]
+    list_display = [
+        "content",
+        "mark_task",
+        "date_time",
+        "deadline"
+    ]
     list_filter = ["date_time"]
